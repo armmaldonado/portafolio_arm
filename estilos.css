@@ -1,0 +1,98 @@
+/* === Estilo general === */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Encabezado con degradado === */
+header {
+  background: linear-gradient(to right, #003973, #b4b4b4);
+  color: white;
+  margin: 20px;
+}
+
+/* === Ajustes navbar === */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+/* === Card de perfil === */
+.perfil-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.perfil-foto {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.perfil-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #4586cc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-size: 1.8rem;
+  color: #3d7dc2;
+}
+
+
+/* === Carrusel de proyectos === */
+.carousel-inner img {
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* === Sección "Sobre mí" === */
+#sobre-mi .card {
+  border-left: 4px solid #3d7dc2;
+}
+
+/* === Formulario de contacto === */
+form .form-control:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+button[type="submit"] {
+  background-color: #215e9b;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #003f7f;
+}
+
+/* === Footer con íconos sociales === */
+footer .fa {
+  transition: transform 0.3s ease;
+}
+
+footer .fa:hover {
+  transform: scale(1.2);
+  color: #17a2b8;
+}
+
+/* === Corrección de anclaje por navbar fija === */
+section[id] {
+  scroll-margin-top: 90px; /* Evita que el navbar tape los títulos */
+}
